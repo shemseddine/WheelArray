@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.438
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WheelArray", "WheelArray\WheelArray.csproj", "{F69BA8A5-F686-419C-A7A1-5B1F265846D3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WheelArray.Test", "WheelArray.Test\WheelArray.Test.csproj", "{9C602991-7201-4BC6-9133-A7C63FF71B50}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DAE1C09F-1A08-44C8-ADEB-E3355C5B5F6D}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F69BA8A5-F686-419C-A7A1-5B1F265846D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F69BA8A5-F686-419C-A7A1-5B1F265846D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F69BA8A5-F686-419C-A7A1-5B1F265846D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F69BA8A5-F686-419C-A7A1-5B1F265846D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C602991-7201-4BC6-9133-A7C63FF71B50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C602991-7201-4BC6-9133-A7C63FF71B50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C602991-7201-4BC6-9133-A7C63FF71B50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C602991-7201-4BC6-9133-A7C63FF71B50}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B07D3225-37A6-4894-9112-D0DC79638997}
+	EndGlobalSection
+EndGlobal
