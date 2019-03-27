@@ -6,13 +6,15 @@ namespace WheelArray
     public class WheelArray<T> : IEnumerator, IEnumerable where T : struct, IConvertible, IComparable, IFormattable
     {
         private T[] _array;
-        int position = -1;
+        int _position = -1;
+        bool _carousel = false;
 
-        public object Current => _array[position];
+        public object Current => _array[_position];
 
-        public WheelArray(T[] array)
+        public WheelArray(T[] array, bool carousel = false)
         {
             _array = array;
+            _carousel = carousel;
         }
 
         public void SetStart(int index)
@@ -42,7 +44,15 @@ namespace WheelArray
 
         public T this[int i]
         {
-            get { return _array[i]; }
+            get
+            {
+                if (_carousel)
+                {
+                    i = i >= _array.Length ? i % _array.Length : i;
+                }
+
+                return _array[i];
+            }
         }
 
         public IEnumerator GetEnumerator()
@@ -52,13 +62,13 @@ namespace WheelArray
 
         public bool MoveNext()
         {
-            position++;
-            return position < _array.Length;
+            _position++;
+            return _position < _array.Length;
         }
 
         public void Reset()
         {
-            position = 0;
+            _position = 0;
         }
     }
 }
